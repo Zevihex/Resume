@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Main Page</title>
   </head>
-  <body>
-    <h1 class="display-1">Welcome</h1>
+  <body id="body">
+    <div class="header">
+      <h6 class="hidden">.................</h6>
+      <h1 class="display-1">Welcome</h1>
+      <div class="dropdown">
+        <button class="dropbtn btn-primary" type="button">Theme</button>
+        <div class="dropdown-content" id="theme-dropdown">
+          <a id="light" value="light" href="#">Light</a>
+          <a id="dark" value="dark" href="#">Dark</a>
+        </div>
+      </div>
+    </div>
     <div class="jumbotron">
       <h1 class="display-4">Social Links</h1>
       <hr class="my-4">
@@ -41,7 +51,6 @@
       <hr class="my-4">
       <div class="row">
         <div class="card col-md-6">
-        <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
           <div class="card-body">
             <h5 class="card-title">Personal Website</h5>
             <p class="card-text">My Personal Website is the first personal project I ever started. It contains information about me and my favorite hobby. I also have a small game based on javascript there as well.</p>
@@ -49,18 +58,25 @@
           </div>
         </div>
         <div class="card col-md-6">
-          <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
             <div class="card-body">
               <h5 class="card-title">Resume</h5>
               <p class="card-text">You are currently viewing this project!</p>
               <a href="#" class="btn btn-primary">Resume Site</a>
             </div>
         </div>
+        <div class="card col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Gambler's City</h5>
+            <p class="card-text">A project I worked on a team with during my time at Chippewa Valley Tech College</p>
+            <a href="https://it-sd-capstone.github.io/capstone-project-gambler-city/" target="_blank" class="btn btn-primary">Gambler's City</a>
+          </div>
+      </div>
       </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./scripts/theme.js" crossorigin="anonymous"></script>
   </body>
 </html>
